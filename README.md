@@ -62,8 +62,6 @@ The TTC values are image-based estimates rather than physical ground-truth TTC v
 
 ## Repository Structure
 
-## Repository Structure
-
 - `notebooks/01_detection_tracking.ipynb` — Vehicle detection, tracking, and bounding-box trajectory extraction
 - `notebooks/02_ttc_baseline.ipynb` — Trajectory inspection, image-scale computation, and baseline TTC estimation
 - `notebooks/03_localization_error_experiment.ipynb` — Controlled localization-error injection and TTC impact evaluation
