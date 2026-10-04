@@ -53,7 +53,7 @@ In this pilot clip, over-boxing produced larger TTC deviations than under-boxing
 
 ## Report
 
-[View the full pilot study report](report/TrafficVision_TTC_Pilot_Study.pdf)
+[View the full pilot study report](TrafficVision_TTC_Pilot_Study.pdf)
 
 ## Limitations
 
