@@ -62,8 +62,10 @@ The TTC values are image-based estimates rather than physical ground-truth TTC v
 
 ## Repository Structure
 
-- `01_detection_tracking.ipynb` — Vehicle detection, tracking, and bounding-box trajectory extraction
-- `02_ttc_baseline.ipynb` — Trajectory inspection, image-scale computation, and baseline TTC estimation
-- `03_localization_error_experiment.ipynb` — Controlled localization-error injection and TTC impact evaluation
+## Repository Structure
+
+- `notebooks/01_detection_tracking.ipynb` — Vehicle detection, tracking, and bounding-box trajectory extraction
+- `notebooks/02_ttc_baseline.ipynb` — Trajectory inspection, image-scale computation, and baseline TTC estimation
+- `notebooks/03_localization_error_experiment.ipynb` — Controlled localization-error injection and TTC impact evaluation
 - `results/` — Experimental result figures
-- `report/` — Full pilot study report
+- `TrafficVision_TTC_Pilot_Study.pdf` — Full pilot study report
