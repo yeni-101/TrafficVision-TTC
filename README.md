@@ -22,7 +22,10 @@ Nexar Dashcam Collision Prediction Dataset and Challenge. This pilot study uses 
 
    s(t) = sqrt(w(t) * h(t))
 
-5. Estimate TTC from temporal scale change.
+5. Estimate the temporal scale-change rate using a 15-frame centered rolling linear fit and compute TTC as:
+
+   TTC(t) = s(t) / s_dot(t), for s_dot(t) > 0
+   
 6. Inject controlled localization errors:
    - Under-boxing
    - Over-boxing
@@ -48,15 +51,19 @@ In this pilot clip, over-boxing produced larger TTC deviations than under-boxing
 
 ![TTC Estimation Failures](results/ttc_estimation_failures.png)
 
+## Report
+
+[View the full pilot study report](report/TrafficVision_TTC_Pilot_Study.pdf)
+
 ## Limitations
 
 This is a pilot study based on a single collision clip.
 The TTC values are image-based estimates rather than physical ground-truth TTC values.
 
-## Tools
+## Repository Structure
 
-- Python
-- Ultralytics YOLO11
-- ByteTrack
-- Pandas
-- NumPy
+- `01_detection_tracking.ipynb` — Vehicle detection, tracking, and bounding-box trajectory extraction
+- `02_ttc_baseline.ipynb` — Trajectory inspection, image-scale computation, and baseline TTC estimation
+- `03_localization_error_experiment.ipynb` — Controlled localization-error injection and TTC impact evaluation
+- `results/` — Experimental result figures
+- `report/` — Full pilot study report
