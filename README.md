@@ -40,6 +40,14 @@ Increasing localization error severity generally produced larger TTC deviations 
 
 In this pilot clip, over-boxing produced larger TTC deviations than under-boxing at the same IoU level.
 
+### TTC Absolute Deviation
+
+![TTC Absolute Deviation](results/ttc_absolute_deviation.png)
+
+### TTC Estimation Failures
+
+![TTC Estimation Failures](results/ttc_estimation_failures.png)
+
 ## Limitations
 
 This is a pilot study based on a single collision clip.
